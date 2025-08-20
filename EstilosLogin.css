@@ -93,6 +93,14 @@ form {
   padding: 10px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   cursor: pointer;
+  display: block; /* HU010: agregamos el display block para poder usar el margin auto y que este pueda centrarlp de forma horizontal*/
+  margin: 20px auto; /* HU010: agregamos este margin para tener centrado automstico */
+  transition: background-color 0.3 ease;
+}
+
+/* HU010: Se agrega el hover para dar efecto visual */
+.button1:hover{
+   background-color: #0056b3;  
 }
 
 .title2 {
