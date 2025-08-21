@@ -28,13 +28,13 @@
             <div id="login" class="tab-content active">
                 <h2 class="login-title2">Iniciar Sesión</h2>
                 <form id="loginform">
-                    <div class="input">
+                    <div class="campo-correo-login">
                         <label for="correo" class="forml-label">Correo Electrónico</label>
                         <input class="password" type="email" id="correo" name="correo" placeholder="Ingrese correo electronico" required 
                             oninvalid="this.setCustomValidity('Por favor, escribe un correo válido')" 
                             oninput="this.setCustomValidity('')" >
                     </div>
-                    <div class="input">
+                    <div class="campo-contraseña-login">
                         <label for="contrasena" class="forml-label">Contraseña</label>
                         <input type="password" class="password" id="contrasena" placeholder="Ingrese contraseña" required
                             oninvalid="this.setCustomValidity('Por favor, escribe una contraseña válida')" 
@@ -49,11 +49,11 @@
             <div id="register" class="tab-content">
                 <h2 class="register-title2">Registrarse</h2>
                 <form id="registerform">
-                    <div class="input">
+                    <div class="campo-correo-register">
                         <label for="regcorreo" class="forml-label">Correo Electrónico</label>
                         <input class="password" type="email" id="regcorreo" name="regcorreo" placeholder="Ingrese correo electrónico" required>
                     </div>
-                    <div class="input">
+                    <div class="campo-contraseña-register">
                         <label for="regcontrasena" class="forml-label">Contraseña</label>
                         <input type="password" class="password" id="regcontrasena" name="regcontrasena" placeholder="Cree una contraseña" required>
                     </div>
@@ -75,7 +75,7 @@
                 <button type="submit" class="modal-button">Enviar enlace</button>
             </form>
      
-            <a href="#" class="modal-close" aria-label="Cerrar">×</a> <!-- HU018 -->
+            <a href="#" class="modal-close" aria-label="Cerrar">x</a> <!-- HU018 -->
         </div>
     </div>
             

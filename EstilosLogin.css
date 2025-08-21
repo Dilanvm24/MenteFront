@@ -74,7 +74,28 @@ form {
   gap: 20px;
 }
 
-.input {
+
+.campo-correo-login{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.campo-contraseña-login{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.campo-correo-register{
+   display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.campo-contraseña-register{
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -278,7 +299,7 @@ form:valid .success-message {
     top: 10px;
     right: 15px;
     font-size: 22px;
-    color: #333;
+    color: #141414;
     text-decoration: none;
     font-weight: bold;
 }
