@@ -26,7 +26,7 @@
             </ul>
 
             <div id="login" class="tab-content active">
-                <h2 class="title2">Iniciar Sesión</h2>
+                <h2 class="login-title2">Iniciar Sesión</h2>
                 <form id="loginform">
                     <div class="input">
                         <label for="correo" class="forml-label">Correo Electrónico</label>
@@ -41,11 +41,13 @@
                             oninput="this.setCustomValidity('')">
                     </div>
                     <button type="submit" class="button1">Ingresar</button>
+                  <!-- HU012 -->  <div class="success-message">Inicio Éxitoso</div> <!-- HU012 -->
+              <!-- HU018 -->       <a href="#recover" class="forgot-password">¿Olvidaste tu contraseña?</a> <!-- HU018 -->
                 </form>
             </div>
 
             <div id="register" class="tab-content">
-                <h2 class="title2">Registrarse</h2>
+                <h2 class="register-title2">Registrarse</h2>
                 <form id="registerform">
                     <div class="input">
                         <label for="regcorreo" class="forml-label">Correo Electrónico</label>
@@ -56,10 +58,27 @@
                         <input type="password" class="password" id="regcontrasena" name="regcontrasena" placeholder="Cree una contraseña" required>
                     </div>
                     <button type="submit" class="button1">Registrarse</button>
+                  <!-- HU012 -->  <div class="success-message">Registro Exitoso</div> <!-- HU012 -->
+
                 </form>
             </div>
         </div>
     </div>
+ <!-- HU018 -->
+    <div id="recover" class="modal">
+        <div class="modal-content" role="dialog" aria-labelledby="recoverTitle" aria-modal="true">
+            <h3 id="recoverTitle" class="modal-title">Recuperar contraseña</h3>
+            <p class="modal-text">Por favor, ingrese su dirección de correo electrónico para continuar con la recuperación de su contraseña</p>
+            <form class="modal-form">
+                <label for="recoverEmail" class="form-label">Correo electrónico</label>
+                <input id="recoverEmail" type="email" class="modal-input" placeholder="tucorreo@.com" required>
+                <button type="submit" class="modal-button">Enviar enlace</button>
+            </form>
+     
+            <a href="#" class="modal-close" aria-label="Cerrar">×</a> <!-- HU018 -->
+        </div>
+    </div>
+            
         <script src="tabs.js"></script>
 </body>
 </html>

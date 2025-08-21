@@ -94,7 +94,7 @@ form {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   cursor: pointer;
   display: block; /* HU010: agregamos el display block para poder usar el margin auto y que este pueda centrarlp de forma horizontal*/
-  margin: 20px auto; /* HU010: agregamos este margin para tener centrado automstico */
+  margin: 20px auto; /* HU010: agregamos este margin para tener centrado horizontal automstico */
   transition: background-color 0.3 ease;
 }
 
@@ -103,12 +103,19 @@ form {
    background-color: #0056b3;  
 }
 
-.title2 {
+.login-title2{
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
 }
+.register-title2{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .registerbutton{
       border-radius: 5px;
   background-color: #aaaaff;
@@ -171,3 +178,109 @@ input:invalid{
     align-items: center;
     gap: 40px;
   }
+
+    /* HU012:  */
+.success-message {
+  display: none; 
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #28a745; 
+  color: white;
+  animation: desaparecer 3s forwards; 
+}
+
+
+/* HU012:  */
+form:valid .success-message {
+  display: block;
+}
+
+/* HU012:  */
+@keyframes desaparecer {
+  0% { opacity: 1;  }
+  80% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}
+
+/* HU018: Estilos para el modal de recuperación de contraseña */
+.modal { 
+    display: none; 
+    position: fixed; 
+    inset: 0;
+    background: rgba(0,0,0,0.5); 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal:target {
+    display: flex; 
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    position: relative;
+    text-align: center;
+}
+
+.modal-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.modal-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #0b0b0c;
+    box-shadow: 0 0 5px #aaaaff;
+}
+
+.modal-button {
+    background-color: #aaaaff;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+    background-color: #0056b3;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.modal-close:hover {
+    color: #0056b3;
+}
