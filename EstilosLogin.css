@@ -7,9 +7,11 @@
 body {
   background: linear-gradient(to bottom, #dcd4e4 0%, #fafad2 100%);
   height: 100vh;
+   margin: 0; /*HU019*/
   font-weight: bold;
   font-family: initial;
   display: flex;
+  justify-content: center; /*HU019*/
   flex-direction: column;
   align-items: center;
 }
